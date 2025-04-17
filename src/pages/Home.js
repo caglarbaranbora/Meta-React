@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Promo from "../components/Promo";
 import Intro from "../components/Intro";
+import Video from "../components/Video";
 
 export default function Home() {
   const [inputText, setInputText] = useState("");
@@ -16,6 +17,7 @@ export default function Home() {
 
   return (
     <div>
+      <Video />
       <h1>Konunun başlığını giriniz</h1>
       <input
         value={inputText}
